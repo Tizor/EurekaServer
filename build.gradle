@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+def springBootVersion = '2.2.6.RELEASE'
+
+
+group 'EurekaServer'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-server', version: '2.2.2.RELEASE'
+}
